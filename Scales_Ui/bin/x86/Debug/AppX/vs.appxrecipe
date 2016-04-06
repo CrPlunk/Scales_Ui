@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Sander\Desktop\AA_C#SHIIIT\Personal\Scales_Delete\Scales_Ui\Scales_Ui\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-06T22:33:49.028</Modified>
+      <Modified>2016-04-06T22:52:59.216</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Sander\Desktop\AA_C#SHIIIT\Personal\Scales_Delete\Scales_Ui\Scales_Ui\bin\x86\Debug\Scales_Ui.exe">
       <PackagePath>entrypoint\Scales_Ui.exe</PackagePath>
-      <Modified>2016-04-06T22:33:48.152</Modified>
+      <Modified>2016-04-06T22:52:59.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sander\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -510,7 +510,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sander\Desktop\AA_C#SHIIIT\Personal\Scales_Delete\Scales_Ui\Scales_Ui\bin\x86\Debug\Core\Scales_Ui.exe">
       <PackagePath>Scales_Ui.exe</PackagePath>
-      <Modified>2016-04-06T22:33:49.025</Modified>
+      <Modified>2016-04-06T22:52:59.212</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

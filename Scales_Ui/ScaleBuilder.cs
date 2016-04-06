@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Scales_Ui
 {
     
-    class ScaleBuilder : PositionalData
+    class ScaleBuilder 
     {
         int[] Octave = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
         

@@ -13,13 +13,11 @@ namespace Scales_Ui
         int[] Octave = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
         
         private int[] _scaleX;
-        public int[] _repositionedScale;
         public int[] ScaleX { get { return this._scaleX; } set { this._scaleX = value; } }
-        public int[] RpScale   { get { return this._scaleX; } }
+       
         public ScaleBuilder()
         {
             this._scaleX = new int[Octave.Length];
-            this._repositionedScale = new int[Octave.Length];
         }
         public void buildScale(int[] notes)  
         {
@@ -50,7 +48,7 @@ namespace Scales_Ui
         
 
     }
-    //TODO: Build Method to Compare Scale with Positional Array, return 2 ints to use in DrawNotes Class
+    
 
 }
 

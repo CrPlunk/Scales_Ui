@@ -54,20 +54,19 @@ namespace Scales_Ui
             }
 
         }
+        PositionalData pos = new PositionalData();
+           
 
 
         private void button_Tapped(object sender, TappedRoutedEventArgs e)
         {
             ScaleBuilder myScale = new ScaleBuilder();
-            PositionalData pos = new PositionalData();
             pos.setCoords();
             int[] Major = { 1, 3, 5, 6, 8, 10, 11 };
-         // int[] Blues = { 1, 4, 6, 8, 11 };
-            
             myScale.buildScale(Major);
           
-   
             int KeyF = 0;  // used to transpose keys
+
             int[] finale = pos.ShiftRight(myScale.ScaleX, KeyF + 7);
             int[] finalB = pos.ShiftRight(myScale.ScaleX, KeyF + 0);
             int[] finalD = pos.ShiftRight(myScale.ScaleX, KeyF + 4);

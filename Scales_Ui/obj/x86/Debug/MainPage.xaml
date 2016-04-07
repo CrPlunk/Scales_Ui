@@ -16,8 +16,26 @@
                 <RowDefinition Height="1*"/>
 
             </Grid.RowDefinitions>
+            <ComboBox x:ConnectionId='1' x:Name="ScalesComboBox" Grid.Column="2" HorizontalAlignment="Left" Margin="100,0,0,0" 
+                      VerticalAlignment="Center" Grid.Row="1"  Width="170"                                                 
+                      MinWidth="150" MaxDropDownHeight="400" FontWeight="Bold">
 
-            <TextBlock x:ConnectionId='1' Grid.Row="0" x:Name="title" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Scales Minimalist" VerticalAlignment="Center" FontSize="30"/>
+                <ComboBoxItem Content="Good ol' Major"/>
+                <ComboBoxItem Content="Melodic Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0"/>
+                <ComboBoxItem Content="Harmonic Major"/>
+                <ComboBoxItem Content="Harmonic Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0"/>
+                <ComboBoxItem Content="Hungarian Major"/>
+                <ComboBoxItem Content="Hungarian Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0"/>
+                <ComboBoxItem Content="Neapolitan Major"/>
+                <ComboBoxItem Content="Neopolitan Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+                <ComboBoxItem Content="Enigmatic"/>
+                <ComboBoxItem Content="Enigmatic Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+                <ComboBoxItem Content="Composit 2"/>
+                <ComboBoxItem Content="Ionian b5" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+                <ComboBoxItem Content="Locrian #7"  />
+                <ComboBoxItem Content="Persian" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+            </ComboBox>
+            <TextBlock x:ConnectionId='2' Grid.Row="0" x:Name="title" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Scales Minimalist" VerticalAlignment="Center" FontSize="30"/>
             <Grid Grid.Row="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".5*"/>
@@ -29,29 +47,30 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="31*"/>
                     <ColumnDefinition Width="318*"/>
-
-
                     <ColumnDefinition Width="71*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:ConnectionId='2' x:Name="button" Content="Major" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top"                         Height="32" Width="70" />
-                <Canvas x:ConnectionId='3' x:Name="Scale" Grid.Row="1"  Grid.Column="1" >
 
-                    <Line x:ConnectionId='4' x:FieldModifier="public" x:Name="highE" Stroke="Black" StrokeThickness="2"
+                <Button x:ConnectionId='3' x:Name="Major" Content="Major" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top"                        Height="32" Width="70" />
+
+
+                <Canvas x:ConnectionId='4' x:Name="myCanvas" Grid.Row="1"  Grid.Column="1" >
+
+                    <Line x:ConnectionId='5' x:FieldModifier="public" x:Name="highE" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
                       X2="920" Y2="0" Canvas.Left="20" Canvas.Top="20" VerticalAlignment="Bottom" Stretch="None"  />
-                    <Line x:ConnectionId='5' x:Name="highB" Stroke="Black" StrokeThickness="2"
+                    <Line x:ConnectionId='6' x:Name="highB" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
                       X2="920" Y2="0" Canvas.Left="20" Canvas.Top="50" VerticalAlignment="Bottom" Stretch="None"  />
-                    <Line x:ConnectionId='6' x:Name="highD" Stroke="Black" StrokeThickness="2"
+                    <Line x:ConnectionId='7' x:Name="highD" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
                       X2="920" Y2="0" Canvas.Left="20" Canvas.Top="80" VerticalAlignment="Bottom" Stretch="None"  />
-                    <Line x:ConnectionId='7' x:Name="middleG" Stroke="Black" StrokeThickness="2"
+                    <Line x:ConnectionId='8' x:Name="middleG" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
                       X2="920" Y2="0" Canvas.Left="20" Canvas.Top="110" VerticalAlignment="Bottom" Stretch="None"  />
-                    <Line x:ConnectionId='8' x:Name="lowA" Stroke="Black" StrokeThickness="2"
+                    <Line x:ConnectionId='9' x:Name="lowA" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
                       X2="920" Y2="0" Canvas.Left="20" Canvas.Top="140" VerticalAlignment="Bottom" Stretch="None"  />
-                    <Line x:ConnectionId='9' x:Name="lowE" Stroke="Black" StrokeThickness="2"
+                    <Line x:ConnectionId='10' x:Name="lowE" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
                       X2="920" Y2="0" Canvas.Left="20" Canvas.Top="170" VerticalAlignment="Bottom" Stretch="None"  />
 
@@ -60,6 +79,7 @@
 
 
                 </Canvas>
+
 
 
 

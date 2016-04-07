@@ -25,7 +25,7 @@ namespace Scales_Ui
             int j = 0;
             for (int i = 0; i < notes.Length; i++)
             {
-                for (int k = j ; k < oct.Length; k++)
+                for (int k = j ; k < oct.Length;)
                 {
                     if (oct[k] == notes[i])
                     {

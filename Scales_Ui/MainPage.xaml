@@ -16,7 +16,25 @@
                 <RowDefinition Height="1*"/>
 
             </Grid.RowDefinitions>
+            <ComboBox x:Name="ScalesComboBox" Grid.Column="2" HorizontalAlignment="Left" Margin="100,0,0,0" 
+                      VerticalAlignment="Center" Grid.Row="1"  Width="170" DropDownClosed="ScalesComboBox_DropDownClosed_1"
+                      MinWidth="150" MaxDropDownHeight="400" FontWeight="Bold">
 
+                <ComboBoxItem Content="Good ol' Major"/>
+                <ComboBoxItem Content="Melodic Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0"/>
+                <ComboBoxItem Content="Harmonic Major"/>
+                <ComboBoxItem Content="Harmonic Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0"/>
+                <ComboBoxItem Content="Hungarian Major"/>
+                <ComboBoxItem Content="Hungarian Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0"/>
+                <ComboBoxItem Content="Neapolitan Major"/>
+                <ComboBoxItem Content="Neopolitan Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+                <ComboBoxItem Content="Enigmatic"/>
+                <ComboBoxItem Content="Enigmatic Minor" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+                <ComboBoxItem Content="Composit 2"/>
+                <ComboBoxItem Content="Ionian b5" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+                <ComboBoxItem Content="Locrian #7"  />
+                <ComboBoxItem Content="Persian" Background="White" BorderBrush="Black" BorderThickness="1,0,0,0" />
+            </ComboBox>
             <TextBlock Grid.Row="0" x:Name="title" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Scales Minimalist" VerticalAlignment="Center" FontSize="30"/>
             <Grid Grid.Row="2">
                 <Grid.RowDefinitions>
@@ -29,12 +47,13 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="31*"/>
                     <ColumnDefinition Width="318*"/>
-
-
                     <ColumnDefinition Width="71*"/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="button" Content="Major" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Tapped="button_Tapped"  Height="32" Width="70" />
-                <Canvas x:Name="Scale" Grid.Row="1"  Grid.Column="1" >
+
+                <Button x:Name="Major" Content="Major" Grid.Column="2" HorizontalAlignment="Center"  Grid.Row="1" VerticalAlignment="Top" Tapped="Major_Tapped"  Height="32" Width="70" />
+
+
+                <Canvas x:Name="myCanvas" Grid.Row="1"  Grid.Column="1" >
 
                     <Line x:FieldModifier="public" x:Name="highE" Stroke="Black" StrokeThickness="2"
                       X1="0" Y1="0"
@@ -60,6 +79,7 @@
 
 
                 </Canvas>
+
 
 
 
